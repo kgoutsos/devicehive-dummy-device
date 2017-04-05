@@ -1,0 +1,9 @@
+URL: http://localhost:8080/api/rest
+AccessKey: eyJhbGciOiJIUzI1NiJ9.eyJwYXlsb2FkIjp7InVzZXJJZCI6MSwiYWN0aW9ucyI6WyIqIl0sIm5ldHdvcmtJZHMiOlsiKiJdLCJkZXZpY2VHdWlkcyI6WyIqIl0sImV4cGlyYXRpb24iOjE0OTcwMTg5NDgyODcsInRva2VuVHlwZSI6IkFDQ0VTUyJ9fQ.BQgno2Tz233VG530JUK6zlCVrAdeny1IvKQRswd6hVw
+
+DeviceID: sample-device
+DeviceName: sample-device
+DeviceNotifcationsReceive: REST
+
+SendNotificatonQueueCapacity: 2047  # Optional: default value is 2048
+LoggingLevel: verbose               # Optional: can be 'info', 'verbose', 'debug'
