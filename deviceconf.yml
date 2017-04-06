@@ -1,4 +1,4 @@
-URL: http://localhost:8080/api/rest
+URL: http://devicehive-server:8080/api/rest
 AccessKey: eyJhbGciOiJIUzI1NiJ9.eyJwYXlsb2FkIjp7InVzZXJJZCI6MSwiYWN0aW9ucyI6WyIqIl0sIm5ldHdvcmtJZHMiOlsiKiJdLCJkZXZpY2VHdWlkcyI6WyIqIl0sImV4cGlyYXRpb24iOjE0OTcwMTg5NDgyODcsInRva2VuVHlwZSI6IkFDQ0VTUyJ9fQ.BQgno2Tz233VG530JUK6zlCVrAdeny1IvKQRswd6hVw
 
 DeviceID: sample-device
