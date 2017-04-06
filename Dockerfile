@@ -2,10 +2,11 @@ FROM golang:alpine
 
 MAINTAINER kgoutsos
 
-RUN apk add --no-cache --update bash dbus git openssh
+RUN apk add --no-cache --update bash dbus git openssh-client
 
-RUN ! ssh -o "StrictHostKeyChecking no" github.com && \
-    ! go get github.com/devicehive/IoT-framework/devicehive-cloud && \
+RUN mkdir -p /root/.ssh && \
+    ssh-keyscan github.com >> /root/.ssh/known_hosts && \
+    ! go get github.com/devicehive/IoT-framework/devicehive-cloud 2> /dev/null && \
     go get github.com/devicehive/IoT-framework/devicehive-cloud && \
     cd $GOPATH/src/github.com/devicehive/IoT-framework/devicehive-cloud && \
     go install
