@@ -1,4 +1,4 @@
-service dbus start
+/usr/bin/dbus-daemon --system
 
 echo "URL: $DH_URL
 AccessKey: $DH_AccessKey

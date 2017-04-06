@@ -1,10 +1,8 @@
-FROM golang
+FROM golang:alpine
 
 MAINTAINER kgoutsos
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends vim dbus && \
-    rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache --update bash dbus git openssh
 
 RUN ! ssh -o "StrictHostKeyChecking no" github.com && \
     ! go get github.com/devicehive/IoT-framework/devicehive-cloud && \
