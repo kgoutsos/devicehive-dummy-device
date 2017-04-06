@@ -24,5 +24,6 @@ ENV DH_DeviceName sample-device
 ENV DH_DeviceNotifcationsReceive REST
 ENV DH_SendNotificatonQueueCapacity 2048
 ENV DH_LoggingLevel info
+ENV STARTUP_DELAY 120
 
 ENTRYPOINT /root/docker-entrypoint.sh
